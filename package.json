@@ -1,0 +1,39 @@
+{
+  "name": "civ",
+  "description": "Search stdout server logs in realtime",
+  "version": "0.0.1",
+  "author": "Chris Andrejewski <christopher.andrejewski@gmail.com>",
+  "bin": {
+    "civ": "./bin/civ.js"
+  },
+  "bugs": {
+    "url": "https://github.com/andrejewski/civ/issues"
+  },
+  "dependencies": {
+    "ansi-escapes": "^3.0.0",
+    "chalk": "^2.3.0",
+    "execa": "^0.8.0"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "fixpack": "^2.3.1",
+    "standard": "^10.0.2"
+  },
+  "homepage": "https://github.com/andrejewski/civ#readme",
+  "keywords": [
+    "log",
+    "search",
+    "stdout",
+    "tool"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrejewski/civ.git"
+  },
+  "scripts": {
+    "lint": "fixpack && standard --fix",
+    "test": "npm run lint && ava"
+  }
+}
